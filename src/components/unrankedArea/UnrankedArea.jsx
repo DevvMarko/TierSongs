@@ -1,7 +1,7 @@
 import React from 'react';
 import {Droppable} from '../../Droppable';
 import {Draggable} from '../../Draggable';
-import style from './Unranked.module.css';
+import style from './unranked.module.css';
 
 const UnrankedArea = ({items, id}) => {
   return (

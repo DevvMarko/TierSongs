@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Droppable} from '../../Droppable';
 import {Draggable} from '../../Draggable';
-import style from './RankArea.module.css';
+import style from './rankArea.module.css';
 
 const RankArea = ({id, parent, child}) => {
   const showChild = parent === id && child;
