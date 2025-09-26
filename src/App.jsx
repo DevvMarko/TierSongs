@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import { DndContext } from '@dnd-kit/core'
 import {UnrankedArea} from './components/unrankedArea/UnrankedArea'
-import {RankArea} from './components/RankArea/RankArea'
+import {RankArea} from './components/rankArea/RankArea'
 
 import style from './App.module.css'
 
