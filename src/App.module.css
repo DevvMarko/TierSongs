@@ -1,0 +1,104 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #020817;
+  font-size: 16px;
+  background-image: radial-gradient(circle at 0% 0%, rgba(50, 100, 200, 0.2), transparent 35%), radial-gradient(circle at 100% 0%, rgba(50, 100, 200, 0.2), transparent 35%);
+}
+.container h1 {
+  color: #5145E5;
+  font-size: 3rem;
+  margin: 0;
+}
+.container p {
+  color: #6b788f;
+}
+.container .rankTable {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  border: 1px solid #30363D;
+}
+.container .rankTable tbody tr:nth-child(odd) {
+  background-color: #0D111C;
+}
+.container .rankTable tbody tr:nth-child(even) {
+  background-color: #1A1E28;
+}
+.container .rankTable tbody tr td:nth-child(1) {
+  width: 10%;
+  font-weight: bold;
+  padding: 10px;
+}
+.container .rankTable tbody tr td:nth-child(2) {
+  width: 90%;
+  padding: 15px;
+}
+.container .rankTable tbody tr td {
+  min-height: 70px;
+}
+.container .rankTable tbody tr td .slotsContainer {
+  height: 100%;
+  border: 2px solid #979797;
+  border-style: dashed;
+  border-radius: 8px;
+}
+.container .unrankedTable {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  background-color: #010510;
+  border: 1px solid #30363D;
+}
+.container .unrankedTable tbody {
+  width: 100%;
+}
+.container .unrankedTable tbody tr {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container .unrankedTable tbody tr td:first-child {
+  width: 10%;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: bold;
+  padding: 15px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+}
+.container .unrankedTable tbody tr td:first-child button {
+  background-color: #F8FAFC;
+  color: #010510;
+  width: 100%;
+  height: auto;
+}
+.container .unrankedTable tbody tr td:last-child {
+  min-height: 100px;
+  width: 90%;
+  padding: 15px;
+  display: flex;
+  box-sizing: border-box;
+}
+.container .unrankedTable tbody tr td:last-child .slotsContainer {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #363c42;
+  border-style: dashed;
+  border-radius: 8px;
+}
+.container .unrankedTable tbody tr td:last-child .slotsContainer .slot {
+  height: 10px;
+  width: 10px;
+  border: 1px solid #444c56;
+}/*# sourceMappingURL=App.module.css.map */

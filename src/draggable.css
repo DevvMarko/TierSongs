@@ -1,0 +1,14 @@
+.videoCard{
+  margin: 5px;
+  background: radial-gradient(circle at 100% 100%, #000000 0, #000000 7px, transparent 7px) 0% 0%/8px 8px no-repeat,
+              radial-gradient(circle at 0 100%, #000000 0, #000000 7px, transparent 7px) 100% 0%/8px 8px no-repeat,
+              radial-gradient(circle at 100% 0, #000000 0, #000000 7px, transparent 7px) 0% 100%/8px 8px no-repeat,
+              radial-gradient(circle at 0 0, #000000 0, #000000 7px, transparent 7px) 100% 100%/8px 8px no-repeat,
+              linear-gradient(#000000, #000000) 50% 50%/calc(100% - 2px) calc(100% - 16px) no-repeat,
+              linear-gradient(#000000, #000000) 50% 50%/calc(100% - 16px) calc(100% - 2px) no-repeat,
+              linear-gradient(90deg, transparent 0%, #411cd6 100%);
+  border-radius: 8px;
+  padding: 11px;
+  box-sizing: border-box;
+  cursor: grab;
+}

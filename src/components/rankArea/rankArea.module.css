@@ -1,0 +1,7 @@
+.rankDroppable {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  height: 100%;
+  padding: 8px;
+}/*# sourceMappingURL=rankArea.module.css.map */
