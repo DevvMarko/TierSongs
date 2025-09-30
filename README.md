@@ -5,30 +5,36 @@
 <p id="description">TierSongs to prosta i intuicyjna aplikacja webowa do tworzenia spersonalizowanych tierlist muzycznych. Z łatwością dodawaj utwory prosto z YouTube i oceniaj je, przeciągając je na odpowiednie miejsce w rankingu.
 </p>
 
-<h2>🚀 Demo</h2>
+## 📺 Demo
 
 [tiersongs.vercel.app](https://tiersongs.vercel.app)
 
-<h2>Wygląd aplikacji:</h2>
+## 🖼️ Wygląd aplikacji
 
-<img src="https://raw.githubusercontent.com/DevvMarko/animood_frontend/refs/heads/main/src/assets/screenshots/scr01.png" alt="project-screenshot" width="400" height="auto">
-<img src="https://raw.githubusercontent.com/DevvMarko/animood_frontend/refs/heads/main/src/assets/screenshots/scr02.png" alt="project-screenshot" width="400" height="auto">
+<img src="https://raw.githubusercontent.com/DevvMarko/TierSongs/refs/heads/main/src/assets/app_01.png" alt="project-screenshot" width="400" height="auto">
+<img src="https://raw.githubusercontent.com/DevvMarko/TierSongs/refs/heads/main/src/assets/app_02.png" alt="project-screenshot" width="400" height="auto">
 
   
   
-<h2>🧐 Funkcje</h2>
-
+## 🧐 Funkcje
 Tutaj są funkcje, które znajdują sie na stronie:
 
-*   **CRUD** – tworzenie nowych pozycji, wyświetlanie szczegółowych informacji, edycja danych i usuwanie wpisów (Funkcje dodawania, usuwania i edycji w wersji demonstracyjnej zostały zablokowane).
-*   **Wyszukiwanie** – szybkie znajdowanie anime po tytule.
-*   **Sortowanie** – możliwość uporządkowania listy według różnych kryteriów (np. alfabetycznie).
-*   **Filtrowanie** – selekcja anime według gatunków (genre).
+*   **Drag & Drop** – możliwość przeciągania i upuszczania dodanych przez użytkownika elementów do tabeli.
+*   **Przechwytywanie linku** – przekazanie aplikacji linku do wideo na YouTube umożliwia jej pobranie tytułu i następnie utworzenie nowego elementu.
+*   **Pobieranie i Przesyłanie** – aplikacja umożliwia pobrania danych na dysk oraz zapisane dane można ponownie załądować na stronę(również poprzez przeciągniecie pliku - drag & drop).
 
 
+## 🚀 Szybki Start
 
+1. **Znajdź film i dodaj**: Odszukaj na YouTube film, który chcesz ocenić. Skopiuj jego link, a następnie w aplikacji kliknij przycisk **Add** (Dodaj).
 
-<h2>🛠️ Proces instalacji:</h2>
+2. **Oceń i uporządkuj**: Nowo dodany element pojawi się na samym dole. Przeciągnij go w dowolne miejsce w tabeli, aby ocenić i uporządkować swoją listę.
+
+3. **Zapisz dane**: Po zakończeniu oceny kliknij przycisk **Download List** (Pobierz listę). Zostanie pobrany plik z Twoimi danymi.
+
+4. **Wczytaj dane**: Aby załadować zapisane dane, kliknij **Upload List** (Wczytaj listę). Po prostu przeciągnij i upuść pobrany wcześniej plik w wyznaczoną strefę. Twoje dane zostaną automatycznie wczytane.
+
+## 🛠️ Proces instalacji
 Pamiętaj aby wcześniej mieć zainstalowany Git i Node.js.
 
 <p>1. Sklonuj repozytorium do swojego katalogu:</p>
@@ -50,8 +56,7 @@ npm run dev
 ```
 
   
-  
-<h2>💻 Wykorzystane technologie:</h2>
+## 💻 Wykorzystane technologie
 
 Technologie, które zostały wykorzystane w projekcie:
 
@@ -59,6 +64,7 @@ Technologie, które zostały wykorzystane w projekcie:
 *   SASS
 *   React-dropzone
 *   Dnd kit
+
 
 ## ✍️ Autor
 Projekt stworzony przez [@DevvMarko](https://github.com/DevvMarko) oraz zapraszam na moją stronę [mbarchanski.pl](https://mbarchanski.pl).
