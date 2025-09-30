@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { DndContext } from '@dnd-kit/core'
 import {UnrankedArea} from './components/unrankedArea/UnrankedArea.jsx'
-import {RankArea} from './components/RankArea/RankArea.jsx'
+import {RankArea} from './components/rankArea/RankArea.jsx'
 import FileDropzone from './components/fileDropzone/FileDropzone.jsx'
 import { saveAs } from 'file-saver';
 
