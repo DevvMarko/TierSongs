@@ -1,12 +1,64 @@
-# React + Vite
+<h1 align="center" id="title">TierSongs</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><img src="https://socialify.git.ci/DevvMarko/TierSongs/image?custom_language=React&language=1&name=1&owner=1&theme=Dark" alt="project-image"></p>
 
-Currently, two official plugins are available:
+<p id="description">TierSongs to prosta i intuicyjna aplikacja webowa do tworzenia spersonalizowanych tierlist muzycznych. Z łatwością dodawaj utwory prosto z YouTube i oceniaj je, przeciągając je na odpowiednie miejsce w rankingu.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🚀 Demo</h2>
 
-## Expanding the ESLint configuration
+[tiersongs.vercel.app](https://tiersongs.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<h2>Wygląd aplikacji:</h2>
+
+<img src="https://raw.githubusercontent.com/DevvMarko/animood_frontend/refs/heads/main/src/assets/screenshots/scr01.png" alt="project-screenshot" width="400" height="auto">
+<img src="https://raw.githubusercontent.com/DevvMarko/animood_frontend/refs/heads/main/src/assets/screenshots/scr02.png" alt="project-screenshot" width="400" height="auto">
+
+  
+  
+<h2>🧐 Funkcje</h2>
+
+Tutaj są funkcje, które znajdują sie na stronie:
+
+*   **CRUD** – tworzenie nowych pozycji, wyświetlanie szczegółowych informacji, edycja danych i usuwanie wpisów (Funkcje dodawania, usuwania i edycji w wersji demonstracyjnej zostały zablokowane).
+*   **Wyszukiwanie** – szybkie znajdowanie anime po tytule.
+*   **Sortowanie** – możliwość uporządkowania listy według różnych kryteriów (np. alfabetycznie).
+*   **Filtrowanie** – selekcja anime według gatunków (genre).
+
+
+
+
+<h2>🛠️ Proces instalacji:</h2>
+Pamiętaj aby wcześniej mieć zainstalowany Git i Node.js.
+
+<p>1. Sklonuj repozytorium do swojego katalogu:</p>
+
+```
+git clone https://github.com/DevvMarko/TierSongs.git
+```
+
+<p>2. Przejdź do folderu projektu i zainstaluj zależności:</p>
+
+```
+npm install
+```
+
+<p>3. Uruchom projekt lokalnie:</p>
+
+```
+npm run dev
+```
+
+  
+  
+<h2>💻 Wykorzystane technologie:</h2>
+
+Technologie, które zostały wykorzystane w projekcie:
+
+*   React
+*   SASS
+*   React-dropzone
+*   Dnd kit
+
+## ✍️ Autor
+Projekt stworzony przez [@DevvMarko](https://github.com/DevvMarko) oraz zapraszam na moją stronę [mbarchanski.pl](https://mbarchanski.pl).
