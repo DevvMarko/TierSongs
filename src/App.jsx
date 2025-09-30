@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { DndContext } from '@dnd-kit/core'
 import {UnrankedArea} from './components/unrankedArea/UnrankedArea.jsx'
-import {RankArea} from './components/rankArea/RankArea.jsx'
+import {RankArea} from './components/RankArea/RankArea.jsx'
+import FileDropzone from './components/fileDropzone/FileDropzone.jsx'
+import { saveAs } from 'file-saver';
 
 import style from './App.module.css'
 
@@ -20,14 +22,10 @@ const rankArray = [
 ]
 
 
-
-
 function App() {
-  const [items, setItems] = useState([
-    
-  ]);
-  const [parent, setParent] = useState(null);
-  const [childId, setChildId] = useState(null);
+  const [items, setItems] = useState([]);
+  const [showDropzone, setShowDropzone] = useState(false)
+
 
   const addItem = (title) => {
     setItems((prevItems) => [
@@ -55,10 +53,26 @@ function App() {
     } 
   }
 
+  const toggleDropzone = () => {
+    setShowDropzone(!showDropzone)
+    // setItems(testItems)
+  }
+
+  const downloadFile = () => {
+    if (!items) {
+      console.error('No data to save');
+      return;
+    }
+    const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
+    saveAs(blob, `TierSongs_${new Date().toISOString()}.json`);
+  }
+
 
   return (
     <DndContext onDragEnd={handleDragEnd}>
       <div className={style.container}>
+        {showDropzone && <FileDropzone jsonArray={items} setJsonArray={setItems} toggleDisplay={setShowDropzone}/>}
+
         <h1>TierSongs</h1>
         <p>Listen, add and rate songs from YouTube!</p>
 
@@ -69,7 +83,10 @@ function App() {
                 <td>{rank.title}</td>
                 <td >
                   <div className={style.slotsContainer}>
-                    <RankArea className={style.slotsContainer} id={rank.id} parent={parent} child={items.find(item => item.id === childId)}/>
+                    <RankArea
+                      id={rank.id}
+                      items={items.filter(item => item.position === rank.id)}
+                    />
                   </div>
                 </td>
               </tr>
@@ -89,21 +106,22 @@ function App() {
                   <div className={style.slotsContainer}>
                     <UnrankedArea items={items} id='unranked_area'/>
                   </div>
-                  
-
               </td>
             </tr>
           </tbody>
         </table>
+        <div className={style.footer}>
+          <button onClick={toggleDropzone}>Upload List</button>
+          <button onClick={downloadFile}>Download List</button>
+        </div>
       </div>
+      
     </DndContext>
   )
 
   function handleDragEnd(event) {
     const {active, over} = event;
     console.log('Drag ended:', {active, over});
-    setParent(over?.id ?? null);
-    setChildId(active?.id ?? null);
     setItems((prevItems) =>
       prevItems.map((item) =>
         item.id === active.id ? {...item, position: over?.id || item.position} : item

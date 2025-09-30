@@ -112,4 +112,20 @@
       }
     }
   }
+
+  .footer{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    button:first-child{
+      background: none;
+      border: 1px solid #252525;
+    }
+    button:last-child{
+      background-color: #e7e7e7;
+      color: rgb(22, 22, 22);
+    }
+  }
 }

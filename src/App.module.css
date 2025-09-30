@@ -101,4 +101,19 @@
   height: 10px;
   width: 10px;
   border: 1px solid #444c56;
+}
+.container .footer {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.container .footer button:first-child {
+  background: none;
+  border: 1px solid #252525;
+}
+.container .footer button:last-child {
+  background-color: #e7e7e7;
+  color: rgb(22, 22, 22);
 }/*# sourceMappingURL=App.module.css.map */
